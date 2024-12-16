@@ -8,7 +8,7 @@ The current implementation uses:
 * Speech synthesis: [System.Speech](https://www.nuget.org/packages/System.Speech/) library which uses the [Microsoft Speech API](https://learn.microsoft.com/en-ca/previous-versions/windows/desktop/ms723627(v=vs.85)) under the hood.
 
 ## Demo
-
+[Demo](https://youtube.com/shorts/Z63Zr6SoqJY)
 
 ## Setup Guide
 * Clone the repo to your machine
