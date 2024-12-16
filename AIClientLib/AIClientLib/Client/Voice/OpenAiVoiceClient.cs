@@ -4,7 +4,6 @@ namespace AiClientLib.Client.Voice
 {
     public class OpenAiVoiceClient : OpenAiClient, IVoiceClient
     {
-
         private const string Model = "whisper-1";
 
         private string TranscriptionUrl;
