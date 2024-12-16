@@ -17,7 +17,7 @@ The current implementation uses:
 * Update the corresponding model path configuration and the name of the Speech API narrator in [this](AIClientLib/AIClientLib/Client/Voice/Models/Vosk/VoiceModelProvider.cs) file (the latter is determined based on the name attribute given in the registry). More details can be found under the **Adding Voices in Windows Speech API** section.
 * You will also need to get an Open AI API key and an org id. Once you get both, you will need to update [this](AIClientLib/AIClientLib/Client/OpenAiClient.cs) config file.
 
-# Adding Voices in Windows Speech API
+## Adding Voices in Windows Speech API
 Adding voices uses the Windows speech API is a bit cumbersome.
 
 * The first thing you will need to do is add additional voices. To do this, please first check that the language of interested actually has supported voices based on your operating system [here](https://support.microsoft.com/en-us/windows/appendix-a-supported-languages-and-voices-4486e345-7730-53da-fcfe-55cc64300f01#WindowsVersion=Windows_11).
