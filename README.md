@@ -13,11 +13,11 @@ The current implementation uses:
 ## Setup Guide
 * Clone the repo to your machine
 * Download Vosk models from [this link](https://alphacephei.com/vosk/models). For the purposes of the demo, I'm using the `vosk-model-en-us-0.22` for English and `vosk-model-es-0.42` for Spanish. Both of these are licensed under the `Apache 2.0` license.
-* Configure the voices for the language of choice. You can learn more about how to add voices here. If you use the `System.Speech` library as I did, please follow the guidance [here](#adding-voices-in-windows-speech-api)
-* Update the corresponding model path configuration and the name of the Speech API narrator in [this](AIClientLib/AIClientLib/Client/Voice/Models/Vosk/VoiceModelProvider.cs) file (the latter is determined based on the name attribute given in the registry). More details can be found [here](#adding-voices-in-windows-speech-api).
+* Configure the voices for the language of choice. You can learn more about how to add voices here. If you use the `System.Speech` library as I did, please follow the guidance under the **Adding Voices in Windows Speech API** section.
+* Update the corresponding model path configuration and the name of the Speech API narrator in [this](AIClientLib/AIClientLib/Client/Voice/Models/Vosk/VoiceModelProvider.cs) file (the latter is determined based on the name attribute given in the registry). More details can be found under the **Adding Voices in Windows Speech API** section.
 * You will also need to get an Open AI API key and an org id. Once you get both, you will need to update [this](AIClientLib/AIClientLib/Client/OpenAiClient.cs) config file.
 
-# Adding Voices in Windows Speech AP
+# Adding Voices in Windows Speech API
 Adding voices uses the Windows speech API is not very easy.
 
 * The first thing you will need to do is add additional voices. To do this, please first check that the language of interested actually has supported voices based on your operating system [here](https://support.microsoft.com/en-us/windows/appendix-a-supported-languages-and-voices-4486e345-7730-53da-fcfe-55cc64300f01#WindowsVersion=Windows_11).
